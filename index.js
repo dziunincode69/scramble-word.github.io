@@ -185,12 +185,12 @@ function BGmusic() {
     var musicon = document.getElementById("music-on")
     let musicoff = document.getElementById("music-off")
     if (!music.paused) {
-        music.pause()
-        musicoff.style.display = "none"
-        musicon.style.display = "block"
-    } else {
         musicon.style.display = "none"
         musicoff.style.display = "block"
+        music.pause()
+    } else {
+        musicoff.style.display = "none"
+        musicon.style.display = "block"
         music.play()
 
     }
