@@ -14,6 +14,7 @@ function submit_form() {
     if (!username) {
         alert("Silahkan masukan nama")
     } else {
+        BGmusic()
         let genders = document.getElementsByName("gender-radio");
         genders.forEach(gender => {
             if (gender.checked) {
