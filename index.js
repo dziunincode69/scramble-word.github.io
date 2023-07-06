@@ -38,7 +38,6 @@ function questionPage() {
         currentQuestionIndex++;
     } else {
         showPopUp()
-        // Implement functionality for when all questions have been answered, like showing the score
     }
 }
 
